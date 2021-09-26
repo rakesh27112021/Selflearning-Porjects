@@ -8,6 +8,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Rakesh\Desktop\Java-Training\Phase2_Bank End\By Nisha-20210926T112855Z-001\By Nisha\HBCodes\Collection_ListMapping"/>
 			<item value="C:\Users\Rakesh\Downloads\11thSepNew (1)\11thSepNew\JdbcDemo"/>
 			<item value="C:\Users\Rakesh\Downloads\11thSepNew (1)\11thSepNew\HibernateXMLWay"/>
 			<item value="C:\Users\Rakesh\Downloads\11thSepNew\11thSepNew\HibernateXMLWay"/>
