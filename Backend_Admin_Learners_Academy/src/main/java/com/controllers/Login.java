@@ -46,11 +46,15 @@ public class Login extends HttpServlet {
 		UserDaoImp dao = new UserDaoImp();
 		boolean isValiduser = dao.validateUser(user);
 		
+		
+		
 		if (isValiduser) {
 			HttpSession session = request.getSession();
 			session.setAttribute("uname",user.getUserName());
 			session.setMaxInactiveInterval(600);
-			response.sendRedirect("dashboard");	
+			response.sendRedirect("dashboard");
+			
+			
 			}else {
 				response.sendRedirect("login.jsp");
 			}

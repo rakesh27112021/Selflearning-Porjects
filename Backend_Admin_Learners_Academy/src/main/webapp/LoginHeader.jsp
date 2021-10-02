@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Learners Academy</title>
 <style><%@include file="/WEB-INF/lib/css/style.css"%></style>
 </head>
 <body>
 
 <div class="header">
-  <a href="#default" class="logo">CompanyLogo</a>
+  <a href="#default" class="logo">Learners Academy</a>
   <div class="header-right">
 
   </div>
