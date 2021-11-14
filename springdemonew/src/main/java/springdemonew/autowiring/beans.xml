@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="springdemonew.autowiring.Pizza" id="pizza">
+		<property name="name" value="Tandori Pizza"></property>
+		<property name="category" value="Veg"></property>
+		<property name="crust" value="Double cheese"></property>
+		<property name="cost" value="250"></property>
+	</bean>
+	
+	<bean class="springdemonew.autowiring.Pizza" id="pizza2">
+		<property name="name" value="Paneer Pizza"></property>
+		<property name="category" value="Veg"></property>
+		<property name="crust" value="cheese"></property>
+		<property name="cost" value="150"></property>
+	</bean>
+	
+	<bean class="springdemonew.autowiring.Pizza" id="pizza3" p:name="Veg Mexicana" p:crust="Cheese" p:cost="250" p:category="Veg">	</bean>
+
+	<bean class="springdemonew.autowiring.Drink" id="drink">
+		<constructor-arg name="name" value="Pepsi"></constructor-arg>
+		<constructor-arg name="category" value="Cold Drink">  </constructor-arg>
+		<constructor-arg name="cost" value="100"></constructor-arg>
+	</bean>
+	<bean class="springdemonew.autowiring.Drink" id="drink2">
+		<constructor-arg name="name" value="Coffee"></constructor-arg>
+		<constructor-arg name="category" value="Beverage">  </constructor-arg>
+		<constructor-arg name="cost" value="200"></constructor-arg>
+	</bean>
+	
+	
+	<bean class="springdemonew.autowiring.Meal" id="meal1" autowire="byName">
+		<property name="mealName" value="Meal fill"></property>
+	</bean>
+	
+	<bean class="springdemonew.autowiring.Meal" id="meal2">
+		<property name="pizza" ref="pizza"></property>
+		<property name="drink" ref="drink2"></property>
+	</bean>
+	
+	<bean class="springdemonew.autowiring.Meal" id="meal3">
+		<property name="pizza" ref="pizza2"></property>
+		<property name="drink" ref="drink2"></property>
+	</bean>
+</beans>
