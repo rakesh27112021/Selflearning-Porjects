@@ -13,12 +13,12 @@ Product Lists
 <br/><br/>
 
 <a  href="addproduct"> Add new product </a><br/>
-
-<form action="search" method="get" >
+<a  href="orders"> Orders </a><br/>
+<form action="" method="get" >
 	Product Name: <input type="text" value="${product.getName()}" name="name"/><br/>
 	<input type="submit" value="Search"/><br/>
 </form>
-<form action="search" method="get" >
+<form action="" method="get" >
 	Category: <input type="text" name="category" value="${product.getCategory()}"/><br/>
 	<input type="submit" value="Search"/><br/>
 </form>

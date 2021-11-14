@@ -10,7 +10,12 @@
 <form action="validate" method="get">
 Enter Username: <input type="text" name="username"/><br/>
 Enter Password: <input type="password" name="password"/><br/>
-<input type="submit" value="login"/>
+<input type="submit" value="login"/><br/>
+
+
+<br/>
+New Registration?<br/>
+<a href="signup">Sign Up</a>
 
 </form> 
 </body>

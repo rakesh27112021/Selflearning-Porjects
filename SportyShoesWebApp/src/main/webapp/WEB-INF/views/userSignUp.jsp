@@ -12,7 +12,7 @@ User first Name: <input type="text" name="userfirstname"><br/>
 User last Name: <input type="text" name="userlastname"><br/>
 Email Id: <input type="text" name="email"><br/>
 User Name: <input type="text" name="username"><br/>
-Password:<input type="text" name="password"><br/>
+Password:<input type="password" name="password"><br/>
 
 <input type="submit" value="Sign up"><br/>
 </form>

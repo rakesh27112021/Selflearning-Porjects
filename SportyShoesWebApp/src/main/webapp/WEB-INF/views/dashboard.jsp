@@ -11,7 +11,6 @@
 <body>
 <%User user=(User)request.getSession().getAttribute("user");%>
 Welcome,${user.getUsername()}<br/><br/><br/>
-${products}
 
 Product Lists
 <br/><br/>

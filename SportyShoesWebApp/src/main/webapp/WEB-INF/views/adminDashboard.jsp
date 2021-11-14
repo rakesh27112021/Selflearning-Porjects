@@ -8,7 +8,8 @@
 </head>
 <body>
 Welcome,<%=request.getSession().getAttribute("adminUserName")%><br/><br/><br/>
-<a href="updatepassword">Update Password</a>
+<a href="userslist">List registered users</a><br/>
+<a href="updatepassword">Update Password</a><br/>
 <a href="..\productmanager\all">Manage Products</a>
 </body>
 </html>

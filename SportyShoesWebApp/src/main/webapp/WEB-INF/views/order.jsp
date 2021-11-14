@@ -22,7 +22,7 @@ Order details
 	Brand: <input type="text" name="brand" value="${order.product.getBrand()}"/><br/>
 	Size: <input type="text" name="size" value="${order.product.getSize()}"/><br/>
 	Category: <input type="text" name="category" value="${order.product.getCategory()}"/><br/>
-	Quantity: <input type="number" name="quantity" value=""/> <br/>
+	Quantity: <input type="number" name="quantity" value=0 required/> <br/>
 	<input type="submit" value="Save"/><br/>
 </form>
 <br/>

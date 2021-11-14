@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.dto.AdminUser;
+import com.dto.User;
 
 @Repository("AdminUserDaoImp")
 public class AdminUserDaoImp implements AdminUserDao {
@@ -88,6 +89,27 @@ public class AdminUserDaoImp implements AdminUserDao {
 			return true;
 		else
 			return false;
+	}
+
+
+	@Override
+	public List<User> listUsers() {
+		String sql = "select * from users";
+		
+		List<User> users =jdbcTemplate.query(sql, new RowMapper<User>() {
+
+			@Override
+			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+				User user = new User(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5));
+				return user;
+			}
+			
+		});
+				
+		System.out.println(users.size());
+		
+		return users;
+		
 	}
 
 }

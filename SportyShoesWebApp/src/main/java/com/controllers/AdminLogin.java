@@ -1,5 +1,6 @@
 package com.controllers;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpSession;
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpSession;
 //import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +17,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.AdminUserDaoImp;
 import com.dto.AdminUser;
+import com.dto.Product;
+import com.dto.User;
 
 @Controller
 @RequestMapping(value="/admin")
@@ -27,7 +31,7 @@ public class AdminLogin {
 	AdminUserDaoImp adimUserDaoImp; 
 
 	
-	@RequestMapping(value="/login",method=RequestMethod.GET)
+	@RequestMapping(value={"/login"},method=RequestMethod.GET)
 	public ModelAndView adminLogin() {
 		ModelAndView modelAndView= new ModelAndView("adminLogin");
 		return(modelAndView);
@@ -105,5 +109,21 @@ public class AdminLogin {
 		
 	}
 	
+	
+	@RequestMapping(value="/userslist")
+	public ModelAndView listUsers(HttpSession session) {
+		ModelAndView modelAndView=null;
+		if (session.getAttribute("adminUserName")!=null) {
+			List<User> users = adimUserDaoImp.listUsers();
+			System.out.println("Testing2");
+			modelAndView = new ModelAndView("users");
+			users.toString();
+			modelAndView.addObject("users",users);
+			modelAndView.addObject("Testing","Hey there");
+		}else {
+			modelAndView = new ModelAndView("redirect:/admin/login");
+		}
+		return modelAndView;
+	}
 	
 }
