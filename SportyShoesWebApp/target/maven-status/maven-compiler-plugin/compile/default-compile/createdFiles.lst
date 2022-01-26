@@ -2,6 +2,7 @@ com\dao\UserDaoImp$3.class
 com\dao\OrderDaoImp.class
 com\controllers\UserController.class
 com\dao\ProductDaoImp$4.class
+com\dao\AdminUserDaoImp$3.class
 com\dao\ProductDao.class
 com\controllers\Welcome.class
 com\dto\Product.class
