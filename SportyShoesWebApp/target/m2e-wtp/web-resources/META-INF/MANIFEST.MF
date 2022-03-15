@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 16
+Class-Path: spring-core-5.0.1.RELEASE.jar spring-jcl-5.0.1.RELEASE.jar s
+ pring-web-5.0.1.RELEASE.jar spring-beans-5.0.1.RELEASE.jar spring-webmv
+ c-5.0.1.RELEASE.jar spring-aop-5.0.1.RELEASE.jar spring-context-5.0.1.R
+ ELEASE.jar spring-expression-5.0.1.RELEASE.jar tomcat-jasper-9.0.12.jar
+  tomcat-servlet-api-9.0.12.jar tomcat-juli-9.0.12.jar tomcat-jsp-api-9.
+ 0.12.jar tomcat-el-api-9.0.12.jar ecj-3.13.102.jar tomcat-jasper-el-9.0
+ .12.jar tomcat-api-9.0.12.jar tomcat-util-scan-9.0.12.jar tomcat-util-9
+ .0.12.jar jstl-1.2.jar mysql-connector-java-8.0.11.jar protobuf-java-2.
+ 6.0.jar spring-jdbc-5.3.10.jar spring-tx-5.3.10.jar
+Main-Class: com.sporty.mainclass.Mainclass
+Created-By: Maven Integration for Eclipse
+

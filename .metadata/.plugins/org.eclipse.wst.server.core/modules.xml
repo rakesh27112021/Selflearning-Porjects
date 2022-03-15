@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
+  <module moduleId="org.eclipse.jst.jee.server:ComplaintRedressalSystemV1" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Backend_Admin_Learners_Academy" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Servers" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPDemo1" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:crud" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPDemo" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:hellospringboot" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:SportyShoes" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ComplaintRedressalSystem" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.j2ee.server:SportyShoesWebApp" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SportyShoesWebApp" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:MyOnlineShopping" serverId="Tomcat v8.0 Server at localhost"/>

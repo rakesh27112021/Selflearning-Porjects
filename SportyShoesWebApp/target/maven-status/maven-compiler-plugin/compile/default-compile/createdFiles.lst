@@ -1,5 +1,7 @@
+com\controllers\Main.class
 com\dao\UserDaoImp$3.class
 com\dao\OrderDaoImp.class
+com\sporty\mainclass\Mainclass.class
 com\controllers\UserController.class
 com\dao\ProductDaoImp$4.class
 com\dao\AdminUserDaoImp$3.class

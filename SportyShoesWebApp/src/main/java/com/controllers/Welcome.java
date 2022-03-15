@@ -16,4 +16,5 @@ public class Welcome {
 		ModelAndView modelAndView= new ModelAndView("adminLogin");
 		return(modelAndView);
 	}
+	
 }

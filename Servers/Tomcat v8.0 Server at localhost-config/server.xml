@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="SportyShoesWebApp" path="/SportyShoesWebApp" reloadable="true" source="org.eclipse.jst.jee.server:SportyShoesWebApp"/><Context docBase="MyOnlineShopping" path="/MyOnlineShopping" reloadable="true" source="org.eclipse.jst.jee.server:MyOnlineShopping"/></Host>
+      <Context docBase="SportyShoesWebApp" path="/SportyShoesWebApp" reloadable="true" source="org.eclipse.jst.jee.server:SportyShoesWebApp"/><Context docBase="MyOnlineShopping" path="/MyOnlineShopping" reloadable="true" source="org.eclipse.jst.jee.server:MyOnlineShopping"/><Context docBase="ComplaintRedressalSystem" path="/ComplaintRedressalSystem" reloadable="true" source="org.eclipse.jst.jee.server:ComplaintRedressalSystem"/><Context docBase="ComplaintRedressalSystemV1" path="/ComplaintRedressalSystemV1" reloadable="true" source="org.eclipse.jst.jee.server:ComplaintRedressalSystemV1"/><Context docBase="Servers" path="/Servers" reloadable="true" source="org.eclipse.jst.jee.server:Servers"/><Context docBase="hellospringboot" path="/hellospringboot" reloadable="true" source="org.eclipse.jst.jee.server:hellospringboot"/><Context docBase="crud" path="/crud" reloadable="true" source="org.eclipse.jst.jee.server:crud"/></Host>
     </Engine>
   </Service>
 </Server>
